@@ -5,7 +5,7 @@ import re
 
 _CARD_RE = re.compile(r"^[0-9A-Za-z-]{3,32}$")
 _NAME_RE = re.compile(r"^[A-Za-zА-Яа-яЁё-]{2,40}$")
-_PLATE_RE = re.compile(r"^[0-9A-Za-zА-Яа-яЁё- ]{4,16}$")
+_PLATE_RE = re.compile(r"^[-0-9A-Za-zА-Яа-яЁё ]{4,16}$")
 
 
 def validate_card_number(value: str) -> str:
